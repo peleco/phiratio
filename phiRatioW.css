@@ -20,11 +20,11 @@
 }
 @font-face {
   font-family: 'Din';
-  src: url('/fonts/din/Din-Regular.eot'); /* IE9 Compat Modes */
-  src: url('/fonts/din/Din-Regular.eot-.eot') format('embedded-opentype'), /* IE6-IE8 */
-       url('/fonts/din/Din-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/din/Din-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/fonts/din/Din-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('fonts/din/DIN-Regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/din/DIN-Regular.eot-.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/din/DIN-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/din/DIN-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/din/DIN-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
   font-weight: normal;
   font-style: normal;
 }
