@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'Din';
+  src: url('fonts/dinpro/din-pro-light.eot');
+  src: url('fonts/dinpro/din-pro-light.eot') format('embedded-opentype'),
+       url('fonts/dinpro/din-pro-light.woff2') format('woff2'),
+       url('fonts/dinpro/din-pro-light.woff') format('woff'),
+       url('fonts/dinpro/din-pro-light.ttf')  format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Din';
+  src: url('fonts/dinpro/din-pro-regular.eot');
+  src: url('fonts/dinpro/din-pro-regular.eot') format('embedded-opentype'),
+       url('fonts/dinpro/din-pro-regular.woff2') format('woff2'),
+       url('fonts/dinpro/din-pro-regular.woff') format('woff'),
+       url('fonts/dinpro/din-pro-regular.ttf')  format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    text-rendering: optimizeLegibility;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-size: 100%;
+	font-family: "Din", Sans-serif;
+  font-weight: 100;
+  color: #000;
+  /*font-weight: 300;*/
+	margin:0;
+	padding:0;
+	background: #fff;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#calculator {
+  font-size: 1.25rem;
+	margin:auto;
+	padding: 0;
+	/*width: 20rem;*/
+  width: 100%;
+  /*max-width: 26.25rem;*/
+	height: auto;
+	display: grid;
+  /*grid-gap: .25rem;*/
+  grid-template-columns: 100%;
+  /*background-color: #f1f1f1;*/
+  text-align: center;
+}
+
+/* Display */
+
+#numberDisplay {
+  grid-column: 1 / 5;
+  grid-row: 1;
+	font-size: 4.5rem;
+	color: #fff;
+	letter-spacing: 0.0625rem;
+  /*font-weight: 200;*/
+
+	overflow: hidden;
+
+	width: 100%;
+	margin: 0;
+	padding: 1.5rem 0;
+  background-color: #000;
+  text-align: center;
+}
+#keyDisplay {
+  grid-column: 1/5;
+  grid-row: 2/5;
+  width: 20rem;
+  margin: auto;
+  display: grid;
+  /*grid-gap: .25rem;*/
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas: "ratioSelect ratioSelect ratioSelect ratioSelect"
+                        "calcBtns calcBtns calcBtns funcBtns"
+                        "calcBtns calcBtns calcBtns funcBtns"
+                        "calcBtns calcBtns calcBtns funcBtns"
+                        "calcBtns calcBtns calcBtns funcBtns";
+  /*background: #ccc;*/
+}
+#ratioSelect{
+  width: 20rem; /*320px*/
+  grid-area: ratioSelect;
+  /*background: #eee;*/
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+#funcBtns {
+	width: 5rem; /*80px*/
+	float: right;
+  grid-area: funcBtns;
+  /*background: #e1e1e1;*/
+  display: grid;
+  grid-template-columns: 100%;
+}
+#calcBtns {
+  width: 15rem; /*240px*/
+  /*float: left;*/
+  grid-area: calcBtns;
+  /*background: lightgrey;*/
+  display: grid;
+  /*grid-gap: .25rem;*/
+  grid-template-columns: auto auto auto;
+  position: relative;
+}
+#refValues, #refValuesInitial {
+  width: 20rem; /*320px*/
+  padding-right: 1.25rem; /*20px*/
+  text-align: right;
+  font-size: 1.25rem;
+  color: #ffde00;
+  /*font-style: italic;*/
+  margin: 0 auto;
+}
+#result{
+  width: 20rem; /*320px*/
+  padding-right: 1.25rem; /*20px*/
+  text-align: right;
+  margin: 1rem auto 0 auto;
+}
+.refValues{
+  display: inline;
+}
+
+/* END Display */
+
+/* Calculator */
+
+.btn {
+  display: block;
+  /*width: 5rem;*/
+  margin: 0;
+  padding: 1.25rem 0;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+  align-content: center;
+  /*float: left;*/
+  /*background-color: #D1D1D1;*/
+}
+/*#btn0 {
+  grid-column: 1 / 3;
+  width: auto;
+}*/
+.ratioSelected {
+  background-color: #ffde00;
+}
+.slctBTN, .calcBTN {
+
+}
+.slctBTN:hover, .funcBTN:hover {
+  background-color: #d1d1d1;
+}
+.calcBTN:hover {
+  background-color: #f1f1f1;
+}
+.calcBTN:active, .slctBTN:active, .funcBTN:active {
+  background-color: #ffde00;
+}
+
+/*.calcBTN {
+	display: block;
+	float: left;
+	height: 44px;
+	width: 44px;
+	margin: 10px;
+  padding: 10px 15px;
+  background-color: #F1F1F1;
+}*/
+/*.funcBTN {
+	display: block;
+	float: right;
+	height: 44px;
+	width: 44px;
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #ffde00;
+}*/
+/*#ratioSelect {
+  width: 280px;
+	margin: 0;
+	padding: 20px;
+	text-align: left;
+}*/
+/*#btn0 {
+	width: 108px !important;
+}*/

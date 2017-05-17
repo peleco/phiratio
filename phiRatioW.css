@@ -29,6 +29,10 @@
   font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     text-rendering: optimizeLegibility;
     font-smoothing: antialiased;
@@ -94,7 +98,8 @@ a {
   font-size: 1.25rem;
 	margin:auto;
 	padding: 0;
-	width: 20rem; /*320 px*/
+	width: 20rem;
+  /*max-width: 26.25rem;*/
 	height: auto;
 	display: block;
   /*background-color: #f1f1f1;*/
