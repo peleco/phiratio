@@ -67,6 +67,12 @@ a {
   color: #000;
 }
 
+footer {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
 #calculator {
   font-size: 1.25rem;
 	margin:auto;
