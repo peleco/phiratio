@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'Noway';
     src: url('fonts/noway/noway-regular-webfont.eot');
     src: url('fonts/noway/noway-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -9,7 +9,7 @@
     font-weight: normal;
     font-style: normal;
 
-}
+}*/
 @font-face{
     font-family: 'Fira Sans';
     src: url('fonts/eot/FiraSans-Light.eot');
@@ -20,7 +20,7 @@
     font-weight: 300;
     font-style: normal;
 }
-@font-face {
+/*@font-face {
   font-family: 'Din';
   src: url('fonts/dinpro/din-pro-light.eot');
   src: url('fonts/dinpro/din-pro-light.eot') format('embedded-opentype'),
@@ -39,7 +39,7 @@
        url('fonts/dinpro/din-pro-regular.ttf')  format('truetype');
   font-weight: 300;
   font-style: normal;
-}
+}*/
 
 * {
     box-sizing: border-box;
